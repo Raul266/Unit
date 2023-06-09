@@ -42,6 +42,7 @@ class BadLoginTests(unittest.TestCase):
         actual = driver.find_element(By.TAG_NAME, "h3").text
         expected = "Epic sadface: Sorry, this user has been locked out."
 
+
         # assert actual == expected, f"Mesajul nu este cel pe care il asteptam: {expected}; mesajul afisat a fost {actual}"
         self.assertEqual(actual, expected, "Mesajul nu este cel pe care il asteptam")
 
